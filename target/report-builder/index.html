@@ -54,7 +54,7 @@
                 <tr><th>Duration</th><td>0S</td></tr>
                 <tr><th>Runtime</th><td>N/A</td></tr>
                 <tr><th>Environment</th><td>HML</td></tr>
-                <tr><th>Date</th><td>jan 21, 2025 (ter) | 01:30:40 BRT</td></tr>
+                <tr><th>Date</th><td>jan 21, 2025 (ter) | 19:55:08 BRT</td></tr>
                 <tr><th>Url</th><td>https://seubarriga.wcaquino.me/login</td></tr>
                 <tr><th>Browser</th><td>N/A</td></tr>
                 </tbody>
@@ -67,13 +67,13 @@
         <li class="feature working">
             <div class="collapsible-header cyan lighten-1 white-text waves-effect waves-light">
                 <i class="material-icons white-text">featured_play_list</i>
-                <b>Feature</b>&nbsp;Login Page (0S)
+                <b>Funcionalidade</b>&nbsp;Acessar página inicial (0S)
             </div>
             <div class="collapsible-body cyan lighten-4">
                 <ul class="collection scenarioList">
                         <li class="collection-item scenario passed">
                             <a class="waves-effect waves-light modal-trigger white-text" href="#f0s0">
-                                <b>Scenario</b> CT01 - Login successfully (0S)
+                                <b>Cenário</b> CT01 - Visualizar página inicial (0S)
                             </a>
                         </li>
                 </ul>
@@ -93,8 +93,8 @@
         </thead>
         <tbody>
                     <tr class="passed">
-                        <td class="hoverable">Login Page</td>
-                        <td class="hoverable"><a class="modal-trigger white-text" href="#f0s0">CT01 - Login successfully</a></td>
+                        <td class="hoverable">Acessar página inicial</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f0s0">CT01 - Visualizar página inicial</a></td>
                         <td class="hoverable uppercase">passed</td>
                         <td class="hoverable hide-on-small-only"></td>
                     </tr>
@@ -119,14 +119,22 @@
 <div id="f0s0" class="modal modal-fixed-footer">
     <div class="modal-content">
 
-        <h5>CT01 - Login successfully</h5>
-        file:src/test/resources/features/Login.feature:5
+        <h5>CT01 - Visualizar página inicial</h5>
+        file:src/test/resources/features/Home.feature:9
 
         <p><ul class="collection stepList">
 <li class="collection-item hook"></li>
 
 <li class="collection-item step passed">
-    <b>Given </b> the use is on the login page (0S)
+    <b>Dado </b> que acesso o site Seu Barriga (0S)
+</li>
+
+<li class="collection-item step passed">
+    <b>Quando </b> visualizo o texto "Seu Barriga" na página (0S)
+</li>
+
+<li class="collection-item step passed">
+    <b>Então </b> confirmo que estou na página inicial do site (0S)
 </li>
 
 <li class="collection-item hook"></li>        </ul></p>
