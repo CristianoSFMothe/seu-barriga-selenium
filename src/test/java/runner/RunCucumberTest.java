@@ -52,7 +52,7 @@ public class RunCucumberTest {
         reportBuilder.setAdditionalInfo("Environment", "HML");
         reportBuilder.setAdditionalInfo("Browser", "N/A");
         reportBuilder.setAdditionalInfo("Url", "https://seubarriga.wcaquino.me/login");
-//        reportBuilder.setAdditionalInfo("Runtime", "N/A");
+        reportBuilder.setAdditionalInfo("Runtime", "N/A");
         reportBuilder.build(cucumberJsonReports);
     }
 }

@@ -3,7 +3,6 @@ package support;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -37,7 +36,6 @@ public class BrowserFactory {
 
         switch (nav) {
             case CHROME:
-                System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
                 WebDriverManager.chromedriver().setup();
                 chromeOptions = createChromeOptions();
                 driver = new ChromeDriver(chromeOptions);
@@ -45,10 +43,9 @@ public class BrowserFactory {
                 break;
 
             case CHROME_HEADLESS:
-                System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
                 WebDriverManager.chromedriver().setup();
                 chromeOptions = createChromeOptions();
-                chromeOptions.addArguments("--headless=old");
+                chromeOptions.addArguments("--headless");
                 driver = new ChromeDriver(chromeOptions);
                 break;
 
@@ -87,6 +84,7 @@ public class BrowserFactory {
         options.addArguments("--window-size=1920,1080");
         return options;
     }
+
     private static FirefoxOptions createFirefoxOptions() {
         FirefoxOptions options = new FirefoxOptions();
         options.addPreference("extensions.enabled", false);
@@ -95,7 +93,7 @@ public class BrowserFactory {
 
     public static void killDriver(){
         if(driver != null) {
-            getBrowser().quit();
+            driver.quit();
             driver = null;
         }
     }
