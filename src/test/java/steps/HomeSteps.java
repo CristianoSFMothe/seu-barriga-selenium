@@ -21,7 +21,6 @@ public class HomeSteps extends BaseSteps {
     public void visualizo_o_texto(String msg) {
         Assert.assertEquals(msg, page.msgWelcome());
         screenshot();
-//        System.out.println("Arrumar o assert");
     }
 
     @Então("confirmo que estou na página inicial do site")
