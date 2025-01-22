@@ -2,6 +2,8 @@
 
 Este repositório contém um projeto de automação web utilizando **Selenium WebDriver** com **Java**, desenvolvido na **IDE IntelliJ**. Os testes foram escritos seguindo a metodologia **BDD** com o framework **Cucumber**.
 
+![image](https://github.com/user-attachments/assets/b7edad5a-a834-49b4-8b14-61cfb08233c0)
+
 ## Tecnologias Utilizadas
 
 - **Java**: Linguagem de programação para desenvolvimento da automação.
@@ -70,6 +72,9 @@ Certifique-se de ter as seguintes ferramentas instaladas:
    mvn test
    ```
 
+![image](https://github.com/user-attachments/assets/9eb4f90e-8659-4d82-b031-9d97a06d84fe)
+
+
 5. Os relatórios dos testes serão gerados automaticamente na pasta `target`.
 
 ## Funcionalidades Automizadas
@@ -79,6 +84,9 @@ Atualmente, o projeto cobre as seguintes funcionalidades do site **Seu Barriga**
 - Acesso à página inicial.
 - Cadastro de novos usuários.
 - Outros cenários podem ser implementados conforme a necessidade.
+
+![image](https://github.com/user-attachments/assets/f3ece9d9-357d-4cec-8f0f-b5d87c534bbb)
+
 
 ## Contribuição
 
