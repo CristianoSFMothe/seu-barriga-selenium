@@ -91,4 +91,42 @@ Este projeto é distribuído sob a licença **MIT**. Consulte o arquivo [LICENSE
 ---
 
 **Desenvolvedor:** Cristiano SFMothe  
-```
+
+### Configura dos arquivos principais
+
+#### Classe BasePage
+
+A classe `BasePage.java` é uma classe base que centraliza métodos comuns de interação com a página, proporcionando uma abstração para facilitar a automação de testes. Ela estende a classe `BrowserFactory` e oferece métodos reutilizáveis para interagir com os elementos da página de forma mais eficiente. 
+
+<details><summary>BasePage</summary>
+
+- **`visitPage(String url)`**:  
+  Acessa a URL fornecida no navegador.
+
+- **`click(By locator)`**:  
+  Realiza um clique em um elemento localizado pelo seletor `By`.
+
+- **`pressEnter()`**:  
+  Simula o pressionamento da tecla `ENTER` no navegador.
+
+- **`fill(By locator, String texto)`**:  
+  Preenche um campo de texto localizado por um `By` com o texto fornecido, limpando o campo antes.
+
+- **`waitElementVisible(By element, int seconds)`**:  
+  Aguarda até que um elemento especificado esteja visível na página, com tempo de espera configurável.
+
+- **`getValueByText(By locator)`**:  
+  Retorna o texto de um elemento localizado por um `By`.
+
+- **`getCurrentUrl()`**:  
+  Retorna a URL atual da página carregada no navegador.
+
+#### Benefícios da Classe `BasePage`
+
+A `BasePage` ajuda a evitar a repetição de código, centralizando funcionalidades comuns de interação com a página. Ao utilizar esta classe, torna-se possível alterar a lógica de interação em um único lugar, tornando o código mais fácil de manter e expandir. Além disso, facilita a leitura e a organização dos testes, tornando-os mais claros e concisos.
+
+Essa abordagem segue o princípio da **reutilização de código**, melhorando a manutenção e escalabilidade da automação de testes.
+
+
+</details>
+
