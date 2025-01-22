@@ -8,5 +8,5 @@ Funcionalidade: Acessar página inicial
 
   Cenário: CT01 - Visualizar página inicial
     Dado que acesso o site Seu Barriga
-    Quando visualizo o texto "Seu Barriga" na página
+    Quando visualizo o texto "Seu Barriga"
     Então confirmo que estou na página inicial do site
